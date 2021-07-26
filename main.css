@@ -1,0 +1,171 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("cycle.jpeg");
+    background-size: cover;
+   
+}
+.container .login{
+    width: 400px;
+    height: 500px;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 20px rgba(0,0,0,0.9);
+    text-align: center;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    /* background-color: yellowgreen; */
+}
+.container .login h1{
+    margin-top: 50px;
+    padding: 20px 0;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    
+
+}
+.container .login .invalid{
+    width: 300px;
+    height: 40px ;
+    font-size: 20px;
+    /* border: 2px solid black; */
+    margin: 0 auto;
+    color: yellowgreen;
+}
+.login form{
+    width:350px;
+    height: 400px;
+    /* border: 2px solid black; */
+    margin: 0 auto;
+}
+.login form .username{
+    width:300px;
+    height: 40px;
+    /* border: 1px solid black; */
+    outline: none;
+    margin: 20px auto;
+    position: relative;
+
+}
+.login form .username input{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    color: gray;
+    padding-left: 20px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    outline: none;
+    background-color: transparent;
+
+}
+.login form .username input:focus ~ label,
+.login form .username input:valid ~ label{
+    /* border: 2px solid #dfe3e7; */
+    transform: translateY(-17px);
+    font-size: 14px;
+    background-color:rgba(37,44,50,255);
+    /* background-color: transparent; */
+    color: white;
+    padding:0 8px;
+    border-radius: 3px;
+    /* color: white; */
+    letter-spacing: 1.5px;
+
+
+}
+.login form .username input:focus{
+    border: 2px solid white ;
+}
+.username label{
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    font-size: 20px;
+    color: gray;
+    pointer-events: none;
+    transition: 0.4s;
+}
+.login .pass{
+    width:300px;
+    height: 40px;
+
+    /* border: 1px solid black; */
+    position: relative;
+    outline: none;
+    margin: 50px auto 0 auto;
+}
+.login .pass input{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    color: gray;
+    padding-left: 20px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    outline: none;
+    background-color: transparent;
+}
+.login form .pass input:focus ~ label,
+.login form .passs input:valid ~ label{
+    /* border: 2px solid #dfe3e7; */
+    transform: translateY(-17px);
+    font-size: 14px;
+    background-color:rgba(37,44,50,255);
+    /* background-color: transparent; */
+    color: white;
+    padding:0 8px;
+    border-radius: 3px;
+    /* color: white; */
+    letter-spacing: 1.5px;
+
+
+}
+.login form .pass input:focus{
+    border: 2px solid white ;
+}
+.pass label{
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    font-size: 20px;
+    color: gray;
+    pointer-events: none;
+    transition: 0.4s;
+}
+.container .login form .submit button input{
+    
+    padding: 8px 16px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    /* border-radius: 10px; */
+    background-color:cyan ;
+    color:black;
+
+
+    
+}
+@media(max-width:768px){
+    .container{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .container .login{
+        width: 100%;
+        height: 100vh;
+        
+    }
+}
